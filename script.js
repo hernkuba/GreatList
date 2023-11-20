@@ -1,27 +1,19 @@
-const person = {
-    namee: "Jakub",
-    surname: "Szewc",
-    age: 19,
-    parent: {
-        namee: "Jaro",
-        surname: "BarProp",
-    },
-    sayHello: function() {
-        console.log(`Czesc! Jestem ${this.namee} ${this.surname} i mam ${this.age} lat`);
-    },
-    getFullName: function() {
-        return `${this.age} ${this.namee}`
-    }
-}
-const person1 = {
-    namee: "Franek",
-    surname: "Szewc",
-    age: 19,
-    sayHello: function() {
-        console.log(`Czesc! Jestem ${this.namee} ${this.surname} i mam ${this.age} lat`);
-    },
-    getFullName: function() {
-        return `${this.age} ${this.namee}`
-    }
-}
-console.log(person);
+const tablica = []
+const button = document.querySelector('.button')
+const zadanie = document.querySelector('.zadanie')
+const input = document.querySelector('.input')
+let id = 0
+button.addEventListener('click', event => {
+  event.preventDefault()
+  tablica.push({
+    id: `${id + 1}`,
+    zadanie: `${input.value}`,
+    visible: true
+  })
+  id++
+  input.value = ''
+  console.log('click')
+
+  zadanie.innerHTML += `<li>${tablica[(id -= 1)].zadanie}</li>`
+  id += 1
+})
