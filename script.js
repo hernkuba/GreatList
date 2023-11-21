@@ -28,9 +28,12 @@ button.addEventListener('click', event => {
     zadanie.appendChild(deleteButton)
 
     id += 1
+
+    deleteButton.addEventListener('click', (event) =>{
+      event.preventDefault()
+      zadanie.removeChild(newLi)
+      zadanie.removeChild(deleteButton)
+    })
   }
 })
 
-function deleteTask () {
-  
-}
