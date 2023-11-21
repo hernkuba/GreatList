@@ -15,12 +15,12 @@ button.addEventListener('click', event => {
       zadanie: input.value,
       visible: true
     }
-    newLi.dataset.class = newTask.id
-    deleteButton.dataset.class = "usun"
+    newLi.classList.add('orderedList__li')
+    deleteButton.classList.add('usun')
     tablica.push(newTask)
-    
+
     id++
-    
+
     input.value = ''
 
     newLi.textContent = tablica[(id -= 1)].zadanie
@@ -29,11 +29,10 @@ button.addEventListener('click', event => {
 
     id += 1
 
-    deleteButton.addEventListener('click', (event) =>{
+    deleteButton.addEventListener('click', event => {
       event.preventDefault()
       zadanie.removeChild(newLi)
       zadanie.removeChild(deleteButton)
     })
   }
 })
-
