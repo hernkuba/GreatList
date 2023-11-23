@@ -5,18 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script defer src="script.js"></script>
-    <link rel="stylesheet" href="li.css">
+    <link rel="stylesheet" href="/css/li.css">
+    <link rel="stylesheet" href="/css/button.css">
+    <link rel="stylesheet" href="/css/main.css">
   </head>
   <body>
     
     <form>
-      <span>Zadanie: </span><input type="text" class="input" />
-      <button class="button">dodaj</button>
+      <span>Zadanie: </span><input type="text" class="input" name="TaskInput" />
+      <button class="button addButton">dodaj</button>
     </form>
-    <div>
-        <ol class="zadanie">
+    <main class="main">
+      <div class="main__element">
+        <ol class="orderedList">
 
         </ol>
       </div>
+      <div class="main__element">
+        <ol class="done">
+
+        </ol>
+      </div>
+    </main>
+    
   </body>
 </html>

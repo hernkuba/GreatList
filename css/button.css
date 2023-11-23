@@ -1,0 +1,17 @@
+.deleteButton {
+  background-color: rgb(247, 150, 167);
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 80%;
+  margin-left: 10px;
+}
+
+.addButton {
+  background-color: rgb(247, 150, 167);
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 80%;
+}
+

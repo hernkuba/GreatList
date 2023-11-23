@@ -1,0 +1,18 @@
+/* .orderedList {
+
+} */
+
+.orderedList__li {
+    color: pink;
+    padding: 5px;
+}
+
+input {
+    border-style:solid;
+    border-color: pink;
+    border-radius: 5px;
+}
+
+.taskDone {
+    text-decoration: line-through;
+}
